@@ -24,14 +24,12 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function () {
-			emailjs.init({publicKey: "92kHvmn3J19XE3I_P"}); // Replace with your EmailJS user ID
+			emailjs.init({ publicKey: "92kHvmn3J19XE3I_P" });
 		})();
 	</script>
 </head>
 
 <body>
-
-	<!-- Header and other sections go here... -->
 
 	<section class="wrapper add_bottom_30">
 		<div class="container">
@@ -96,41 +94,35 @@
 			</div>
 		</div>
 	</section>
-	<!-- EmailJS SDK -->
+
 	<script>
 		document.getElementById('contactform').addEventListener('submit', function (event) {
-			event.preventDefault(); // Prevent the default form submission
+			event.preventDefault();
 
-			// Check if CAPTCHA is correct
 			var captcha = document.getElementById('verify_contact').value;
 			if (captcha != '4') {
 				alert("Please verify you're human!");
 				return;
 			}
 
-			// Form Data
 			var formData = {
-				name_contact: document.getElementById('name_contact').value,
-				lastname_contact: document.getElementById('lastname_contact').value,
-				email_contact: document.getElementById('email_contact').value,
-				phone_contact: document.getElementById('phone_contact').value,
-				message_contact: document.getElementById('message_contact').value
+				user_name: document.getElementById('name_contact').value + ' ' + document.getElementById('lastname_contact').value,
+				user_email: document.getElementById('email_contact').value,
+				user_phone: document.getElementById('phone_contact').value,
+				message: document.getElementById('message_contact').value
 			};
 
-			// Sending the email using EmailJS
-			emailjs.send('service_q72444j', 'template_fpacze8', formData)
+			emailjs.send('service_q72444j', 'template_wmqvhir', formData)
 				.then(function (response) {
 					console.log('SUCCESS!', response.status, response.text);
 					document.getElementById('success_message').style.display = 'block';
-					document.getElementById('contactform').reset(); // Clear form after successful submission
+					document.getElementById('contactform').reset();
 				}, function (error) {
 					console.log('FAILED...', error);
 					document.getElementById('error_message').style.display = 'block';
 				});
 		});
 	</script>
-
-	<!-- Footer and other sections go here... -->
 
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/common_scripts_min.js"></script>
