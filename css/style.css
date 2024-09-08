@@ -383,7 +383,7 @@ a.btn_slider,
 	font-family: inherit;
 	font-size: inherit;
 	color: #fff;
-	background: #ed5434;
+	background: #cfb1a4;
 	cursor: pointer;
 	padding: 8px 20px;
 	display: inline-block;
@@ -401,12 +401,12 @@ a.btn_slider,
 a.btn_slider:hover,
 .btn_slider:hover {
 	background: #fff;
-	color: #ed5434;
+	color: #cfb1a4;
 }
 
 a.btn_1.white,
 .btn_1.white {
-	background: #ed5434;
+	background: #cfb1a4;
 	color: #fff;
 }
 
@@ -414,7 +414,7 @@ a.btn_1.white:hover,
 .btn_1.white a:hover,
 .btn_1.white:hover {
 	background: #fff;
-	color: #ed5434 !important;
+	color: #cfb1a4 !important;
 }
 
 /*-------- 1.3 Structure --------*/
@@ -600,7 +600,7 @@ ul#top_links a:hover {
 
 /* Footer */
 footer {
-	background: #222 url(../img/pattern_3.png) repeat 0 0;
+	background: #334f5f url(../img/pattern_3.png) repeat 0 0;
 	color: #fff;
 	padding: 30px 0 30px 0;
 }
@@ -982,7 +982,7 @@ video {
 }
 
 .box_how .icon_how {
-	border: 2px solid #589442;
+	border: 2px solid #1098a4;
 	border-radius: 50%;
 	width: 110px;
 	height: 110px;
@@ -992,7 +992,7 @@ video {
 }
 
 .box_how .icon_how span {
-	background-color: #589442;
+	background-color: #1098a4;
 	border-radius: 50%;
 	width: 95px;
 	display: block;
@@ -1018,7 +1018,7 @@ video {
 }
 
 .box_style_1 {
-	background-color: #589442;
+	background-color: #1098a4;
 	padding: 20px 30px 20px 30px;
 	color: #fff;
 	margin-bottom: 30px;
@@ -1161,7 +1161,7 @@ a#phone_2 {
 
 .box_map i {
 	font-size: 42px;
-	color: #589442;
+	color: #1098a4;
 	position: absolute;
 	left: 0;
 	top: -10px;
@@ -1246,7 +1246,7 @@ a#phone_2 {
 .feature-box .feature-box-icon {
 	border: 3px double #ededed;
 	border-radius: 45px;
-	color: #589442;
+	color: #1098a4;
 	display: inline-block;
 	float: left;
 	height: 45px;
@@ -1270,7 +1270,7 @@ a#phone_2 {
 
 /* Reviews tab */
 #summary_review {
-	background: #589442 url(../img/pattern_6.png) repeat;
+	background: #1098a4 url(../img/pattern_6.png) repeat;
 	padding: 20px;
 	color: #fff;
 	margin: 0 0 30px 0;
@@ -1312,7 +1312,7 @@ a#phone_2 {
 	display: block;
 	height: 95px;
 	margin: auto;
-	color: #589442;
+	color: #1098a4;
 	font-weight: 500;
 	font-size: 46px;
 	line-height: 100px;
@@ -1769,7 +1769,7 @@ ul.contacts_info li:last-child {
 
 .box_features i {
 	font-size: 60px;
-	color: #589442;
+	color: #1098a4;
 }
 
 .team-item-img {
@@ -1828,7 +1828,7 @@ ul.contacts_info li:last-child {
 }
 
 .team-item-detail-inner .social li a:hover {
-	color: #ed5434;
+	color: #cfb1a4;
 }
 
 .team-item-info {
@@ -1878,7 +1878,7 @@ ul.social_profile li {
 ul.social_profile li a {
 	color: #fff;
 	display: inline-block;
-	background-color: #589442;
+	background-color: #1098a4;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -1960,7 +1960,7 @@ ul.list_3 li:before {
 	position: absolute;
 	left: 0;
 	top: 0;
-	color: #589442;
+	color: #1098a4;
 	font-size: 18px;
 }
 
@@ -2039,7 +2039,7 @@ ul.social_maintenance li a:hover {
 
 .box_style_3 i {
 	font-size: 52px;
-	color: #589442;
+	color: #1098a4;
 }
 
 /*-------- 2.11 Blog page --------*/
@@ -2139,7 +2139,7 @@ ul.social_maintenance li a:hover {
 
 .dropcaps p:first-child::first-letter {
 	color: #fff;
-	background-color: #589442;
+	background-color: #1098a4;
 	float: left;
 	font-size: 64px;
 	line-height: 1;
@@ -2538,8 +2538,8 @@ only screen and (min-device-pixel-ratio: 2) {
 	-webkit-transform: rotate(-45deg);
 	width: 100px;
 	display: block;
-	background: #79A70A;
-	background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+	background: #1098a4;
+	background: linear-gradient(#8ce4fc 0%, #1098a4 100%);
 	box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 	position: absolute;
@@ -2553,10 +2553,10 @@ only screen and (min-device-pixel-ratio: 2) {
 	left: 0px;
 	top: 100%;
 	z-index: -1;
-	border-left: 3px solid #79A70A;
+	border-left: 3px solid #1098a4;
 	border-right: 3px solid transparent;
 	border-bottom: 3px solid transparent;
-	border-top: 3px solid #79A70A;
+	border-top: 3px solid #1098a4;
 }
 
 .ribbon span::after {
@@ -2566,9 +2566,9 @@ only screen and (min-device-pixel-ratio: 2) {
 	top: 100%;
 	z-index: -1;
 	border-left: 3px solid transparent;
-	border-right: 3px solid #79A70A;
+	border-right: 3px solid #1098a4;
 	border-bottom: 3px solid transparent;
-	border-top: 3px solid #79A70A;
+	border-top: 3px solid #1098a4;
 }
 
 .ribbon.top span {
@@ -3224,7 +3224,7 @@ ul.list_ok li:before {
 }
 
 .search-overlay-menu .search-overlay-close:hover {
-	color: #ed5434;
+	color: #cfb1a4;
 	cursor: pointer;
 }
 

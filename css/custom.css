@@ -13,7 +13,7 @@
 	-moz-animation: circle infinite .95s linear;
 	-o-animation: circle infinite .95s linear;
 	animation: circle infinite .95s linear;
-	border: 2px solid #cc0066;
+	border: 2px solid #b16474;
 	border-top-color: rgba(0, 0, 0, .2);
 	border-right-color: rgba(0, 0, 0, .2);
 	border-bottom-color: rgba(0, 0, 0, .2);
@@ -22,15 +22,15 @@
 /*-------- 1.2 Buttons --------*/
 	a.button_intro_2,
 	.button_intro_2 {
-		background: #cc0066;
+		background: #b16474;
 	}
 	a.button_intro_2:hover,
 	.button_intro_2:hover {
-		color: #cc0066 !important;
+		color: #b16474 !important;
 	}
 	a.btn_full,
 	.btn_full {
-		background: #cc0066;
+		background: #b16474;
 	}
 	a.btn_full:hover,
 	.btn_full:hover {
@@ -38,7 +38,7 @@
 	}
 	a.btn_1,
 	.btn_1 {
-		background: #cc0066;
+		background: #b16474;
 	}
 	a.btn_1:hover,
 	.btn_1:hover {
@@ -46,8 +46,8 @@
 	}
 	a.btn_1_outline,
 	.btn_1_outline {
-		color: #cc0066;
-		border: 2px solid #cc0066;
+		color: #b16474;
+		border: 2px solid #b16474;
 	}
 	a.btn_1_outline:hover,
 	.btn_1_outline:hover {
@@ -57,7 +57,7 @@
 	}
 	/*General links color*/
 	a {
-		color: #cc0066;
+		color: #b16474;
 	}
 	a:hover,
 	a:focus {
@@ -68,26 +68,26 @@
 /*============================================================================================*/
 
 	ul#tools_top li a.search-overlay-menu-btn:hover {
-		color: #cc0066;
+		color: #b16474;
 	}
 	/*First level styles */			
-	.main-menu > ul > li:hover > a {background-color:#cc0066;}
+	.main-menu > ul > li:hover > a {background-color:#b16474;}
 
 @media only screen and (min-width: 992px) {
 	
 	/* Submenu style*/
-	.main-menu ul ul li:hover > a {background-color:#f9f9f9;color:#cc0066;}
+	.main-menu ul ul li:hover > a {background-color:#f9f9f9;color:#b16474;}
 	/* Megamenu */
-	.main-menu ul li.megamenu .menu-wrapper {border-top: 2px solid #cc0066;}
+	.main-menu ul li.megamenu .menu-wrapper {border-top: 2px solid #b16474;}
 }
 
 @media only screen and (max-width: 991px) {
-	#header_menu{background:#cc0066 url(../img/pattern_3.png) repeat;}
+	#header_menu{background:#b16474 url(../img/pattern_3.png) repeat;}
 	.main-menu ul li a:hover,
 	a.show-submenu:hover,
 	a.show-submenu:focus,
 	a.show-submenu-mega:hover,
-	a.show-submenu-mega:focus{color:#cc0066 !important;background-color:#f9f9f9;}	
+	a.show-submenu-mega:focus{color:#b16474 !important;background-color:#f9f9f9;}	
 }
 /*============================================================================================*/
 /* end MENU */
@@ -101,33 +101,33 @@
 		color:#ff3366;
 	}
 	#top_line {
-		background: #cc0066 url(../img/pattern_3.png) repeat;
+		background: #b16474 url(../img/pattern_3.png) repeat;
 	}
 	
 	#tickets.table tr.total_row {
-		color: #cc0066;
+		color: #b16474;
 	}
 	
 	#tickets.table td input#total {
-		color: #cc0066;
+		color: #b16474;
 	}
 	
 	.indent_title_in i {
-		color: #cc0066;
+		color: #b16474;
 	}
 	
 	.bloglist ul li a:hover,
 	.bloglist h4 a:hover {
-		color: #cc0066;
+		color: #b16474;
 	}
 	.owl-theme .owl-dots .owl-dot.active span,
 	.owl-theme .owl-dots .owl-dot:hover span {
-		background: #cc0066;
+		background: #b16474;
 	}
 	.pagination > li > a:hover,
 	.pagination > li > span:hover {
-		background-color: #cc0066 !important;
-		border-color: #cc0066 !important;
+		background-color: #b16474 !important;
+		border-color: #b16474 !important;
 		color: #ffffff !important;
 	}
 	.list_tours ul li a .price_list {
@@ -140,16 +140,16 @@
 		background-color: #ff3366;
 	}
 	.price_grid {
-		background-color: #cc0066;
+		background-color: #b16474;
 	}
 	.banner {
-		background: #cc0066 url(../img/pattern_3.png) repeat;
+		background: #b16474 url(../img/pattern_3.png) repeat;
 	}
 	.panel-title a .indicator {
-		color: #cc0066;
+		color: #b16474;
 	}
 	.box_style_2 h3{
-		background-color:#cc0066;
+		background-color:#b16474;
 	}
 	.box_style_2 h3 span{
 	color: #FF9;

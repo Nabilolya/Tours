@@ -156,11 +156,11 @@
 }
 
 .ls-fullwidthdark .ls-thumbnail-hover-bg {
-	background: #222;
+	background: #334f5f;
 }
 
 .ls-fullwidthdark .ls-thumbnail-hover span {
-	border: 5px solid #222;
+	border: 5px solid #334f5f;
 	margin-left: -5px;
 }
 
@@ -173,7 +173,7 @@
 .ls-fullwidthdark .ls-thumbnail-inner {
 	padding: 2px;
 	margin-left: -2px;
-	background: #222;
+	background: #334f5f;
 }
 
 .ls-fullwidthdark .ls-thumbnail-slide a {
