@@ -21,10 +21,10 @@
 	<link href="css/custom.css" rel="stylesheet">
 
 	<!-- EmailJS SDK -->
-	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function () {
-			emailjs.init("YOUR_EMAILJS_USER_ID"); // Replace with your EmailJS user ID
+			emailjs.init({publicKey: "92kHvmn3J19XE3I_P"}); // Replace with your EmailJS user ID
 		})();
 	</script>
 </head>
@@ -118,7 +118,7 @@
 			};
 
 			// Sending the email using EmailJS
-			emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+			emailjs.send('service_q72444j', 'template_fpacze8', formData)
 				.then(function (response) {
 					console.log('SUCCESS!', response.status, response.text);
 					document.getElementById('success_message').style.display = 'block';
