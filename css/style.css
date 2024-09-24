@@ -524,6 +524,7 @@ ul#tools_top li a.search-overlay-menu-btn:hover {
 }
 
 #logo_home h1 a {
+<<<<<<< Updated upstream
   width: 145px;
   height: 60px;
   display: block;
@@ -532,8 +533,42 @@ ul#tools_top li a.search-overlay-menu-btn:hover {
   background-position: left top;
   background-size: 75px 75px;
   text-indent: -9999px;
+=======
+	width: 145px;
+	height: 34px;
+	display: block;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	 background-size: contain; 
+	text-indent: -9999px;
+
+}
+/* Responsive sizes */
+@media (max-width: 1200px) {
+    #logo_home h1 a {
+        width: 150px; /* Adjust width for medium screens */
+        height: 37.5px; /* Adjust height for medium screens */
+        background-size: contain; /* Adjust scaling */
+    }
+>>>>>>> Stashed changes
 }
 
+@media (max-width: 768px) {
+    #logo_home h1 a {
+        width: 120px; /* Adjust width for smaller screens */
+        height: 30px; /* Adjust height for smaller screens */
+        background-size: contain; /* Adjust scaling */
+    }
+}
+
+@media (max-width: 480px) {
+    #logo_home h1 a {
+        width: 100px; /* Adjust width for very small screens */
+        height: 25px; /* Adjust height for very small screens */
+        background-size: contain; /* Adjust scaling */
+    }
+}
 header.sticky #top_line {
   height: 0;
   overflow: hidden;
@@ -1650,6 +1685,7 @@ a.list_bt {
 }
 
 .promo_full {
+<<<<<<< Updated upstream
   height: auto;
   background: url(../img/promo_bg.jpg) no-repeat center center;
   background-attachment: fixed;
@@ -1658,6 +1694,16 @@ a.list_bt {
   -moz-background-size: cover;
   -o-background-size: cover;
   position: relative;
+=======
+	height: auto;
+	background: url(../img/sienna.PNG) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+>>>>>>> Stashed changes
 }
 
 .promo_full_wp {
