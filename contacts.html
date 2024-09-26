@@ -79,8 +79,7 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label>Are you human? 3 + 1 =</label>
-										<input type="text" id="verify_contact" class="form-control styled" placeholder="4" required>
+										
 									</div>
 									<p>
 										<input type="submit" value="Submit" class="btn_1" id="submit-contact">
@@ -100,11 +99,7 @@
 		document.getElementById('contactform').addEventListener('submit', function (event) {
 			event.preventDefault();
 
-			var captcha = document.getElementById('verify_contact').value;
-			if (captcha != '4') {
-				alert("Please verify you're human!");
-				return;
-			}
+		
 
 			var formData = {
 				user_name: document.getElementById('name_contact').value + ' ' + document.getElementById('lastname_contact').value,
