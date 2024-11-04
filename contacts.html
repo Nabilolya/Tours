@@ -107,7 +107,10 @@
 				user_phone: document.getElementById('phone_contact').value,
 				message: document.getElementById('message_contact').value
 			};
-
+          console.log("Hello nabster");
+		  console.log(formData);
+		  
+		  var messageMoez ='The infomation about the client are: '+ formData.user_name +' '+ formData.user_name;
 			emailjs.send('service_lw42eim', 'template_dc7fwic', formData)
 				.then(function (response) {
 					console.log('SUCCESS!', response.status, response.text);
