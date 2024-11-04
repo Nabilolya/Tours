@@ -19,6 +19,12 @@
 <link href="css/style.css" rel="stylesheet">
     <link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
 </head>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+		<script type="text/javascript">
+		(function () {
+			emailjs.init({ publicKey: "PwNK0NId5HRLNtBgy" });
+		})();
+	</script>
 
 <body>
 
@@ -437,7 +443,7 @@ End your tour by descending into the Lower Town, where you'll wander through nar
 					<div class="box_style_2">
 						<h3>Book Your Tour<span>Free service - Confirmed immediately</span></h3>
 						<div id="message-booking"></div>
-						<form method="post" action="assets/check_avail.php" id="check_avail" autocomplete="off">
+						<form  id="check_avail" autocomplete="off">
 							<input type="hidden" id="tour_name" name="tour_name" value="General Louvre Tour">
 							<table id="tickets" class="table">
 								<thead>
@@ -512,7 +518,7 @@ End your tour by descending into the Lower Town, where you'll wander through nar
 
 						</form>
 						<hr>
-						<a href="#0" class="btn_outline"> or Contact us</a>
+						<a href="contacts.html" class="btn_outline"> or Contact us</a>
 						<a href="tel://004542344599" id="phone_2"><i class="icon_set_1_icon-91"></i>+45 423 445 99</a>
 
 					</div>
@@ -759,6 +765,36 @@ The Château Frontenac, an iconic symbol of Quebec City, boasts stunning archite
 	<!-- End Search Menu -->
 
 	<!-- COMMON SCRIPTS -->
+		<script>
+		document.getElementById('check_avail').addEventListener('submit', function (event) {
+			event.preventDefault();
+
+		
+
+			var formData = {
+				user_name: document.getElementById('name_lastname_booking').value,
+				user_email: document.getElementById('email_booking').value,
+				user_phone: document.getElementById('telephone_booking').value,
+				date: document.getElementById('date_pick').value,
+				tourists : document.getElementById('adults').value,
+				
+			};
+          console.log("Hello nabster");
+		  console.log(formData);
+		  
+		  var messageMoez ='The infomation about the client are: '+ formData.user_name +' '+ formData.user_name;
+			emailjs.send('service_lw42eim', 'template_tyah1fr', formData)
+				.then(function (response) {
+					console.log('SUCCESS!', response.status, response.text);
+					//document.getElementById('success_message').style.display = 'block';
+					window.location.href = 'bookingdone.html';
+					document.getElementById('check_avail').reset();
+				}, function (error) {
+					console.log('FAILED...', error);
+					document.getElementById('error_message').style.display = 'block';
+				});
+		});
+	</script>
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/common_scripts_min.js"></script>
 	<script src="assets/validate.js"></script>
