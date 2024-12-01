@@ -229,7 +229,7 @@
                </div>
                <aside class="col-md-4">
                   <div class="box_style_1">
-                     <div class="price"><strong>$90</strong><small>per person</small></div>
+                     <div class="price"><strong>$120</strong><small>per person</small></div>
                      <ul class="list_ok">
                         <li>English, French Speaking Guide</li>
                         <li>Special Needs Transportation</li>
@@ -258,7 +258,7 @@
                            </tfoot>
                            <tbody>
                               <tr>
-                                 <td><strong>Adult</strong><a href="#" class="tooltip-1" data-placement="top" title="" data-original-title="16 - 65 years old"><sup class="icon-info-4"></sup></a><span class="price">$8.25</span></td>
+                                 <td><strong>Adult</strong><a href="#" class="tooltip-1" data-placement="top" title="" data-original-title="16 - 65 years old"><sup class="icon-info-4"></sup></a><span class="price">$120</span></td>
                                  <td>
                                     <div class="styled-select">
                                        <select class="form-control" name="adults" id="adults">
@@ -287,7 +287,7 @@
                         <div class="form-group"><input type="submit" value="Book now" class="btn_full" id="submit-booking"></div>
                      </form>
                      <hr>
-                     <a href="contacts.html" class="btn_outline"> or Contact us</a><a href="tel://004542344599" id="phone_2"><i class="icon_set_1_icon-91"></i>+45 423 445 99</a>
+                     <a href="contacts.html" class="btn_outline"> or Contact us</a><a href="tel://004542344599" id="phone_2"><i class="icon_set_1_icon-91"></i>+1 418 999 1281</a>
                   </div>
                </aside>
             </div>
@@ -298,7 +298,7 @@
          <div class="owl-carousel owl-theme carousel add_bottom_30">
             <div>
                <div class="img_wrapper">
-                  <div class="price_grid"><sup>$</sup>90</div>
+                  <div class="price_grid"><sup>$</sup>120</div>
                   <div class="img_container">
                      <a href="detail-page6.html">
                         <img src="img/fl.jpg" width="800" height="533" class="img-responsive" alt="">
@@ -316,7 +316,7 @@
             </div>
             <div>
                <div class="img_wrapper">
-                  <div class="price_grid"><sup>$</sup>90</div>
+                  <div class="price_grid"><sup>$</sup>120</div>
                   <div class="img_container">
                      <a href="detail-page4.html">
                         <img src="img/tourr2.jpg" width="800" height="533" class="img-responsive" alt="">
@@ -334,7 +334,7 @@
             </div>
             <div>
                <div class="img_wrapper">
-                  <div class="price_grid"><sup>$</sup>90</div>
+                  <div class="price_grid"><sup>$</sup>120</div>
                   <div class="img_container">
                      <a href="detail-page2.html">
                         <img src="img/tourr1.jpg" width="800" height="533" class="img-responsive" alt="">
@@ -352,7 +352,7 @@
             </div>
             <div>
                <div class="img_wrapper">
-                  <div class="price_grid"><sup>$</sup>90</div>
+                  <div class="price_grid"><sup>$</sup>120</div>
                   <div class="img_container">
                      <a href="detail-page3.html">
                         <img src="img/tourr3.jpg" width="800" height="533" class="img-responsive" alt="">
@@ -375,7 +375,7 @@
             <div class="row">
                <div class="col-md-3 col-sm-3">
                   <h3>Need help?</h3>
-                  <a href="tel://004542344599" id="phone">+45 423 445 99</a> <a href="mailto:help@citytours.com" id="email_footer" >help@explorequebec.com</a > 
+                  <a href="tel://004542344599" id="phone">+1 418 999 1281</a> <a href="mailto:help@citytours.com" id="email_footer" >help@explorequebec.com</a > 
                </div>
                <div class="col-md-2 col-sm-3">
                   <h3>About</h3>
@@ -471,5 +471,40 @@
 		$('#date_pick').datepicker();
 	</script>
 	<script src="js/sidebar_carousel_detail_page_func.js"></script>
+	<script>
+  // Get the DOM elements for the adult ticket quantity and total price input
+  const adultsSelect = document.getElementById('adults');
+  const totalInput = document.getElementById('total');
+  const subtotalElement = document.querySelector('.subtotal'); // to display subtotal
+
+  // Function to calculate total
+  function calculateTotal() {
+    // Get the selected quantity of tickets (adults)
+    const quantity = parseInt(adultsSelect.value, 10);
+
+    // Initialize price variable
+    let pricePerTicket = 0;
+
+    // Determine price based on the quantity of tickets
+    if (quantity === 1) {
+      pricePerTicket = 120; // 1 ticket
+    } else if (quantity >= 2 && quantity <= 4) {
+      pricePerTicket = 140; // 2 to 4 tickets
+    } else if (quantity >= 5) {
+      pricePerTicket = 160; // 5 or more tickets
+    }
+
+    // Calculate total price
+    const total = pricePerTicket * quantity;
+
+    // Update the subtotal and total fields
+    subtotalElement.textContent = `$${total}`;
+    totalInput.value = total;
+  }
+
+  // Event listener for change in the select dropdown to recalculate total
+  adultsSelect.addEventListener('change', calculateTotal);
+</script>
+
    </body>
 </html>
