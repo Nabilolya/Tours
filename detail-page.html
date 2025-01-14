@@ -564,14 +564,11 @@ The perfect blend of culture and fun—highly recommend this tour!"											</
 													<option value="4">4</option>
 													<option value="5">5</option>
 													<option value="6">6</option>
-													<option value="7">7</option>
-													<option value="8">8</option>
-													<option value="9">9</option>
+												
 												</select>
 											</div>
 										</td>
-										<td class="text-center"><span class="subtotal">$0</span>
-										</td>
+									
 									</tr>
 						
 								
@@ -894,7 +891,7 @@ The Château Frontenac, an iconic symbol of Quebec City, boasts stunning archite
   const adultsSelect = document.getElementById('adults');
   const totalInput = document.getElementById('total');
   const subtotalElement = document.querySelector('.subtotal'); // to display subtotal
-
+  const elementTo = document.querySelector('th.text-center span.subtotal');
   // Function to calculate total
   function calculateTotal() {
     // Get the selected quantity of tickets (adults)
@@ -918,6 +915,10 @@ The Château Frontenac, an iconic symbol of Quebec City, boasts stunning archite
     // Update the subtotal and total fields
     subtotalElement.textContent = `$${total}`;
     totalInput.value = total;
+	subtotalElement.value = total;
+	console.log('This is total ');
+	elementTo.value = 'New Value';
+	console.log(total);
   }
 
   // Event listener for change in the select dropdown to recalculate total
